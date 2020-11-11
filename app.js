@@ -48,7 +48,7 @@ app.use('/users', usersRouter);
 // admin
 app.use('/admin', adminRouter);
 app.use('/api/v1/member', apiRouter);
-const cors = require('cors');
+app.use(cors());
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
